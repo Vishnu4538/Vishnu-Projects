@@ -5,7 +5,7 @@ pipeline {
         stage('pulling the github repo') {
               steps{
                   echo "pulling the github repo"
-                  git url: 'https://github.com/Vishnu4538/jenkin', branch: 'main'
+                  git url: 'https://github.com/Vishnu4538/Vishnu-Projects-for-Cloud-and-Devops/simple_staticwebsite_CICD', branch: 'main'
               }            
         }
         stage('building the code'){
