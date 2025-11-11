@@ -15,7 +15,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: docker.io/vishnu4538/nginxapp:8
+      - image: docker.io/vishnu4538/nginxapp:100
         name: website
         ports:
         - containerPort: 80
