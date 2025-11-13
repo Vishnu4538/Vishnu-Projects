@@ -1,3 +1,7 @@
 import devops_module as dev
+import sys
 
-dev.update_image(105,"/workspaces/Vishnu-Projects/Projects-CICD/vishnu.yml")
+buildid=sys.argv[0]
+filepath=sys.argv[1]
+
+dev.update_image(buildid,filepath)
