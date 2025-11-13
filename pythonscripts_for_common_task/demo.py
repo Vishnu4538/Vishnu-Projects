@@ -1,8 +1,11 @@
 import devops_module as dev
-import sys as sy
+import sys
 
-number=sy.argv[0]
+nuk=int(sys.argv[1])
 
-path=sy.argv[1]
+path=sys.argv[2]
 
-dev.update_image(number,path)
+
+dev.update_image(nuk,path)
+
+

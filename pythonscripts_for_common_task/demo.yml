@@ -15,7 +15,7 @@ spec:
         app: crashlooplearning
     spec:
       containers:
-      - image: docker.io/vishnu4538/nginxapp:78
+      - image: docker.io/vishnu4538/nginxapp:100
         name: crashlooplearning
         ports:
         - containerPort: 80
@@ -23,4 +23,3 @@ spec:
           limits:
             cpu: 2m
             memory: 2Mi
-
