@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/githubissue')
+@app.route('/githubissue', methods=["POST"])
 def Jira_issue():
     url = "https://domain.atlassian.net/rest/api/3/issue"
     
