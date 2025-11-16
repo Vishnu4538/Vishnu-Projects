@@ -17,7 +17,6 @@ import json
 
 url = "https://edlavishnu2000.atlassian.net/rest/api/3/project"
 
-token="ATATT3xFfGF04kbYZD602chMvn2mEbq27yDF-90H2uvhOrYYqwvYPn7EJJpLxxUC_prnhype1dOcSy1Zh8IbO_-lbJvxVxgFJto4XdD76BdXyqDVgOrOJbaoYnc5ol99jhc3YK2k-3AHPSpMLS8FbTDAEQ9J-_a8ej2p5whq-K_QD0A7MY8KkGs=B30A91DD"
 auth = HTTPBasicAuth("edlavishnu2000@gmail.com", token)
 
 headers = {
