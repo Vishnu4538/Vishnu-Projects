@@ -1,0 +1,72 @@
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+     - node_modules/*
+     - src/*
+     - Dockerfile
+    exclude:
+     - README.md
+     - azure-pipelines.yml
+     - kubernetes/*
+     
+pool: mylaptop
+
+stages:
+- stage: Installing_the_Package
+  jobs:
+  - job:  Installing_package
+    steps:
+    - script: npm ci
+    - script: npm test
+
+- stage: static_code_analysis
+  jobs:
+  - job: code_analysis
+    steps:
+      - task: SnykSecurityScan@1
+        inputs:
+          serviceConnectionEndpoint: 'edlavishnu2000'
+          testType: 'code'
+          failOnIssues: false
+          projectName: 'vishnu'
+          organization: 'edlavishnu2000'
+        
+
+- stage: Building_the_Docker_image
+  jobs:
+    - job: Building_Docker_image
+      steps:
+      - script: docker build -t vishnu4538/$(repo):$(Build.BuildId) .
+    - job: login
+      dependsOn: Building_Docker_image
+      condition: Succeeded('Building_Docker_image')
+      steps:
+        - task: Docker@2
+          inputs:
+            containerRegistry: 'docker'
+            command: 'login'
+    - job: pushing
+      dependsOn: Building_Docker_image
+      condition: Succeeded('Building_Docker_image')
+      steps:
+      - task: Docker@2
+        inputs:
+          containerRegistry: 'docker'
+          repository: 'vishnu4538/devsecops'
+          command: 'push'
+        
+
+- stage: Scanning_the_container
+  jobs:
+    - job :
+      steps :
+        - task: SnykSecurityScan@1
+          inputs:
+            serviceConnectionEndpoint: 'edlavishnu2000'
+            testType: 'container'
+            dockerImageName: 'vishnu4538/devsecops:$(Build.BuildId)'
+            monitorWhen: 'always'
+            failOnIssues: false
