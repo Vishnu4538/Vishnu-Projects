@@ -12,22 +12,28 @@ Kindly refer the pipeline YAML.
 
 Screnshots
 Unit testing 
-<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/232122a6-93d2-493c-825a-16f0bebfeef6" />
-
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/2fda3dc0-fcdb-498a-bed3-5ea0b8a98dd0" />
 
 Source code analysis
 
-<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/23f66f72-8752-4c1d-8318-ffc0a93eede7" />
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/9bc0095a-c7b6-4771-835f-dc55b9eb6fe2" />
 
 
 Building the docker image 
 
-<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/66e3633b-7f64-44d8-b100-1e4e6f60288f" />
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/ec6ab060-842c-4607-87d3-e188ce08a456" /
+
+Pushing the image 
+
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/ef5dbce7-71d7-490b-bbf8-d6b835b45c18" />
+
+Scanning the image 
+
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/8127c14f-19d4-46d5-b5ac-c7c1243d0a4f" />
 
 
-Scanning the docker image
 
-<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/675945b5-aae1-4ccf-87b6-ffcdd0a7c591" />
+
 
 
 
