@@ -1,6 +1,7 @@
 Devosecops using Azurepipiles 
 
 Application : ReactJs application
+
 stages:
 Unit testing 
 conducting the source code anaylsis using Snyk tool , 
