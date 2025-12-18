@@ -1,6 +1,11 @@
 Devosecops using Azurepipiles 
 
-Setup devsecops for ReactJs application , stages included unit testing , conducting the source code anaylsis using Snyk tool , building the Docker image and scanning the docker image using Synk tool.
+Application : ReactJs application
+stages:
+Unit testing 
+conducting the source code anaylsis using Snyk tool , 
+building the Docker image 
+scanning the docker image using Synk tool.
 
 Kindly refer the pipeline YAML.
 
