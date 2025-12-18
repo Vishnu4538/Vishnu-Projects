@@ -65,7 +65,7 @@ agent {label 'agent'}
            steps {
                     git url: 'github repo', branch: 'main'
                     echo "changing the image"
-                    sh ' python3 image_update.py ${BUILD_NUMBER}'
+                    sh ' python3 image_update.sh ${BUILD_NUMBER}'
                      withCredentials([gitUsernamePassword(credentialsId: 'git', gitToolName: 'Default')]) {
                      sh '''
                        git config user.name "USERNAME"
