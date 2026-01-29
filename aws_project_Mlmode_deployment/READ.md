@@ -1,4 +1,4 @@
-
+Successfully deployed the ML models in servers.
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/cc30f95c-7c17-470b-80f0-8693709dfb07" />
@@ -24,5 +24,6 @@
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/30535137-3adc-44da-a85e-b30ea45ab8f1" />
+
 
 
