@@ -4,7 +4,7 @@ AWS architenture
 1) Created  VPC 10.0.0.0/16 and subnet.
 2) Created jump server to access the VM model
 3) Created Application LB to distribute traffic between two VM.
-4) created Region NAT so that Two VM can download packages and access the internet.
+4) Created Region NAT so that Two VM can download packages and access the internet.
 5) Deployed the ML deployed on VMs.
 6) Tested Load using bash script which sends the request to Two VM.
 
@@ -35,6 +35,7 @@ AWS architenture
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/30535137-3adc-44da-a85e-b30ea45ab8f1" />
+
 
 
 
