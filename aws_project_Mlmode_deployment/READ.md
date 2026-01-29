@@ -7,6 +7,7 @@ AWS architenture
 4) Created Region NAT so that Two VM can download packages and access the internet.
 5) Deployed the ML deployed on VMs.
 6) Tested Load using bash script which sends the request to Two VM.
+Tech stack used : Python , Gunicore , AWS 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/5266da4c-4a14-4eb4-b20f-8466aaf88151" />
 
@@ -35,6 +36,7 @@ AWS architenture
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/30535137-3adc-44da-a85e-b30ea45ab8f1" />
+
 
 
 
